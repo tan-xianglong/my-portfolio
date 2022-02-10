@@ -12,10 +12,7 @@
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Signika+Negative:wght@300;400;500;600;700&display=swap"
     rel="stylesheet"
   />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
+  <script src="https://kit.fontawesome.com/9dbc478fe2.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
@@ -23,15 +20,16 @@
     <nav class="navbar-mobile flex">
       <div class="logo-container-mobile flex">
         <div class="image-container">
-          <img class="nav-logo" src="./images/logo.png" />
+          <img class="nav-logo" src=""/>
         </div>
         <p>Xianglong</p>
       </div>
       <div id="link-container-mobile">
         <ul>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#" class="icon" onclick="navToggle()"><i class="fa-solid fa-xmark"></i></a></li>
+          <li><a href="#" onclick="navToggle()">Portfolio</a></li>
+          <li><a href="#" onclick="navToggle()">About Me</a></li>
+          <li><a href="#" onclick="navToggle()">Contact</a></li>
         </ul>
       </div>
       <a href="javascript:void(0);" class="icon" onclick="navToggle()">
@@ -41,7 +39,7 @@
     <nav class="navbar-desktop flex">
       <div class="logo-container-desktop flex">
         <div class="image-container">
-          <img class="nav-logo" src="./images/logo.png" />
+          <img class="nav-logo" src="" />
         </div>
         <p>Xianglong</p>
       </div>
@@ -54,6 +52,11 @@
       </div>
     </nav>
   </header>
+  <main>
+    <section class="introduction">
+      
+    </section>
+  </main>
   <script src="./js/script.js"></script>
 </body>
 </html>

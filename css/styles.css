@@ -1,13 +1,7 @@
 /* Universal style */
-/* 
-#0dceda - cyan
-#111111 - darkgrey
-#28e6f2 - light cyan
-#0aa0aa - deep cyan
-#2a2a2a - light grey
-#000000 - black
-#f7f7f7 - lighter grey (background)
- */
+:root {
+
+}
 html {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
@@ -31,4 +25,126 @@ h1 {
 .image-container img {
   display: block;
   width: 100%;
+}
+
+/* Navigation bar */
+header {
+}
+
+.navbar-mobile {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 0.75rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  font-size: 1.5rem;
+  height: 54px;
+}
+
+.logo-container-mobile {
+  align-items: center;
+}
+
+.logo-container-mobile .image-container {
+  width: 10%;
+}
+
+.logo-container-mobile img {
+  width: 100%;
+}
+
+.logo-container-mobile p {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+#link-container-mobile {
+  display: block;
+  position: fixed;
+  width: 100%;
+  text-align: right;
+  right: -100%;
+  height: 100%;
+  top: 0;
+  padding: 0 1.5rem;
+  background-color: white;
+  transition: right 1s ease 0s;
+}
+
+#link-container-mobile ul li {
+  margin-top: 1.5rem;
+  font-weight: 100;
+}
+
+.navbar-desktop {
+  display: none;
+}
+
+@media only screen and (min-width: 800px){
+  .navbar-mobile {
+    display: none;
+  }
+
+  .navbar-desktop {
+    width: 100%;
+    height: 54px;
+    position: fixed;
+    top: -54px;
+    left: 0;
+    right: 0;
+    display: flex;
+    padding: 0.75rem;
+    justify-content: space-between;
+    align-items: center;
+    transition: top 0.3s;
+  }
+
+  .logo-container-desktop {
+    align-items: center;
+  }
+
+  .logo-container-desktop .image-container {
+    width: 10%;
+  }
+
+  .logo-container-desktop img {
+    width: 100%;
+  }
+
+  .logo-container-desktop p {
+    font-family: "Signika Negative", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  #link-container-desktop {
+    width: 60%;
+  }
+
+  #link-container-desktop ul {
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  #link-container-desktop ul li {
+    font-weight: 300;
+    margin: 0 1rem;
+    min-width: max-content;
+  }
+
+  #link-container-desktop ul li a {
+    padding-bottom: 0.5rem;
+  }
+
+  #link-container-desktop ul li a:hover {
+    border-bottom: solid #111111 1px;
+  }
+}
+
+main {
+  height: 3000px;
+
 }
