@@ -1,15 +1,16 @@
 /* Universal style */
+/* rgb(56,99,141) */
 :root {
 
 }
 html {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
-  color: #111111;
+  color: #fff;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 12vw;
   font-weight: 500;
   line-height: 1.2;
 }
@@ -39,7 +40,6 @@ header {
   padding: 0.75rem;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
   font-size: 1.5rem;
   height: 54px;
 }
@@ -49,7 +49,8 @@ header {
 }
 
 .logo-container-mobile .image-container {
-  width: 10%;
+  width: 30%;
+  max-width: 400px;
 }
 
 .logo-container-mobile img {
@@ -58,7 +59,7 @@ header {
 
 .logo-container-mobile p {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  font-weight: 700;
+  font-weight: 300;
 }
 
 #link-container-mobile {
@@ -79,6 +80,10 @@ header {
   font-weight: 100;
 }
 
+.fa-bars {
+  color: #fff
+}
+
 .navbar-desktop {
   display: none;
 }
@@ -90,7 +95,7 @@ header {
 
   .navbar-desktop {
     width: 100%;
-    height: 54px;
+    height: 70px;
     position: fixed;
     top: -54px;
     left: 0;
@@ -107,7 +112,8 @@ header {
   }
 
   .logo-container-desktop .image-container {
-    width: 10%;
+    width: 30%;
+    max-width: 500px;
   }
 
   .logo-container-desktop img {
@@ -137,14 +143,110 @@ header {
 
   #link-container-desktop ul li a {
     padding-bottom: 0.5rem;
+    color: #fff
   }
 
   #link-container-desktop ul li a:hover {
-    border-bottom: solid #111111 1px;
+    border-bottom: solid #fff 1px;
   }
 }
 
+/* introduction */
 main {
   height: 3000px;
+
+}
+
+.introduction {
+  width: 100vw;
+  height: 100vh;
+  background-color: #38638d;
+  background-image: linear-gradient(to right top, #38638d, #38638d, #38638d, #38638d, #38638d, #436b95, #4e749e, #587ca6, #587ca6, #587ca6, #587ca6, #587ca6);
+}
+
+#intro-title {
+  width: 50%;
+  height: auto;
+  padding-top: 20vh;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#intro-logo-container1 {
+  width: 100%
+}
+
+#intro-logo-container2 {
+  display: none;
+}
+
+#intro-logo-container1 > img {
+  width: 100%
+}
+
+#intro-links > ul {
+  display: flex;
+  margin: 20% auto;
+  justify-content: center;
+}
+
+#intro-links > ul > li {
+  margin: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: solid 1px;
+}
+
+#intro-links > ul > li > a {
+  color: #fff;
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 800px) {
+  .introduction {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #intro-title {
+    width: 50%;
+    height: auto;
+    padding-top: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  #intro-logo-container1 {
+    display: none;
+  }
+
+  #intro-logo-container2 {
+    display: block;
+  }
+
+  #intro-links {
+  }
+
+  #intro-links > ul {
+    display: block;
+    margin: 20% auto;
+    justify-content: center;
+  }
+
+  #intro-links > ul > li {
+    margin: 3rem 1rem;
+    border-bottom: none;
+    transition: transform 0.5s ease;
+  }
+
+  #intro-links > ul > li > a {
+    font-size: 3vw;
+    font-weight: 100;
+    cursor: pointer;
+  }
+
+  #intro-links > ul > li:hover {
+    transform: scale(1.5);
+  }
 
 }
