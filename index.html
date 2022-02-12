@@ -20,13 +20,14 @@
     <nav class="navbar-mobile flex">
       <div class="logo-container-mobile flex">
         <div class="image-container">
-          <img class="nav-logo" src="./images/hr-Color-logo-no-background.svg"/>
+          <img class="nav-logo1" src="./images/hr-Color-logo-no-background.svg"/>
+          <img class="nav-logo2" src="./images/hr-Black-logo-no-background.svg"/>
         </div>
       </div>
       <div id="link-container-mobile">
         <ul>
           <li><a href="#" class="icon" onclick="navToggle()"><i class="fa-solid fa-xmark"></i></a></li>
-          <li><a href="#" onclick="navToggle()">Portfolio</a></li>
+          <li><a href="#porfolio" onclick="navToggle()">Portfolio</a></li>
           <li><a href="#" onclick="navToggle()">About Me</a></li>
           <li><a href="#" onclick="navToggle()">Contact</a></li>
         </ul>
@@ -38,12 +39,13 @@
     <nav class="navbar-desktop flex">
       <div class="logo-container-desktop flex">
         <div class="image-container">
-          <img class="nav-logo" src="./images/hr-Color-logo-no-background.svg" />
+          <img class="nav-logo1" src="./images/hr-Color-logo-no-background.svg" />
+          <img class="nav-logo2" src="./images/hr-Black-logo-no-background.svg"/>
         </div>
       </div>
       <div id="link-container-desktop">
         <ul class="flex">
-          <li><a href="#">Portfolio</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#">About Me</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
@@ -60,10 +62,31 @@
       </div>
       <div id="intro-links">
         <ul>
-          <li><a href="#">Portfolio</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#">About Me</a></li>
           <li><a href="#">Get in touch</a></li>
         </ul>
+      </div>
+    </section>
+    <section id="portfolio">
+      <div id="portfolio-title-container">
+        <h2>PORTFOLIO</h2>
+      </div>
+      <div id="portfolio-container">
+        <div class="portfolio-card" id="card1">
+          <a href="https://tan-xianglong.github.io/basics-blackjack/" target="_blank">
+            <img id="portfolio-img1" src="./images/portfolio-blackjack2.png" alt="blackjack screenshot" />
+            <h3 class="portfolio-name">BLACKJACK</h3>
+          </a>
+        </div>
+        <div class="portfolio-desc" id="desc1"><i class="fa-solid fa-chevron-left"></i>JAVASCRIPT GAME</div>
+        <div class="portfolio-desc" id="desc2">RESPONSIVE WEBSITE<i class="fa-solid fa-chevron-right"></i></div>
+        <div class="portfolio-card" id="card2">
+          <a href="https://tan-xianglong.github.io/responsive-home-page/" target="_blank">
+            <img id="portfolio-img2" src="./images/portfolio-roboadvisor.png" alt="responsive home page screenshot" />
+            <h3 class="portfolio-name">COMPANY HOMEPAGE</h3>
+          </a>
+        </div>
       </div>
     </section>
   </main>
