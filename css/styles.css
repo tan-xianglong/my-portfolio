@@ -32,6 +32,12 @@ section {
   scroll-snap-align: start;
 }
 
+.fadein {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 1.5s linear, opacity 1.5s linear;
+}
+
 /* Navigation bar */
 .navbar-mobile {
   position: fixed;
@@ -227,9 +233,6 @@ main {
 
   #intro-logo-container2 {
     display: block;
-  }
-
-  #intro-links {
   }
 
   #intro-links > ul {
