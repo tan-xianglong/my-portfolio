@@ -306,7 +306,7 @@ section {
 #card1 > a > h3 {
   margin: 1rem auto;
   color: #fff;
-  font-size: 25px;
+  font-size: 16px;
   font-weight: 300;
   letter-spacing: 0.05rem;
 }
@@ -318,7 +318,7 @@ section {
 
 #card2 > a > h3 {
   margin: 1rem auto;
-  font-size: 25px;
+  font-size: 16px;
   font-weight: 300;
   letter-spacing: 0.05rem;
   color: #111111
