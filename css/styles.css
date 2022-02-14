@@ -164,10 +164,6 @@ section {
 }
 
 /* introduction */
-main {
-  height: 3000px;
-
-}
 
 .introduction {
   width: 100vw;
@@ -263,6 +259,8 @@ main {
 
 #portfolio {
   width: 100vw;
+  padding-bottom: 3rem;
+  border-bottom: 0.5px solid #acacac;
 }
 
 #portfolio-title-container {
@@ -446,4 +444,141 @@ main {
     background-color: #38638d;
   }
 
+}
+
+/* about me */
+#aboutMe {
+  width: 100vw;
+  padding-bottom: 4rem;
+}
+
+#aboutMe-container {
+  padding-top: 70px;
+  flex-direction: column;
+}
+
+#aboutMe1 {
+  padding-bottom: 2rem;
+}
+#aboutMe1 h2 {
+  font-size: 35px;
+  color: #111111;
+  font-weight: 300;
+  text-align: center;
+}
+
+#aboutMe1 p {
+  font-size: 16px;
+  color: #111111;
+  margin: 2rem;
+  font-weight: 100;
+  text-align: left;
+  letter-spacing: 0.05rem;
+}
+
+#aboutMe1 div {
+  display: flex;
+  justify-content: center;
+}
+
+#aboutMe1 button {
+  border: none;
+  background-color: #00000000;
+  color: #38638d;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  padding: 0.5rem;
+  border-bottom: 0.5px solid;
+  cursor: pointer;
+}
+
+#aboutMe2 {
+  width: 100vw;
+  height: 100vw;
+  background-image: url("../images/aboutme-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center; 
+  object-fit: contain;
+}
+
+#techStack {
+  margin: 2rem;
+}
+
+#techStack h2{
+  font-size: 35px;
+  color: #111111;
+  font-weight: 300;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+#techStack ul {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#techStack li {
+  font-size: 16px;
+  margin: 1rem;
+  color: #111111;
+  text-align: center;
+}
+
+#techStack img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  padding-bottom: 1rem;
+}
+
+/* Contact Me */
+#contactMe {
+  background-image: linear-gradient(to right top, #38638d, #38638d, #38638d, #38638d, #38638d, #436b95, #4e749e, #587ca6, #587ca6, #587ca6, #587ca6, #587ca6);
+}
+
+#contactMe h2{
+  font-size: 35px;
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+  padding: 2rem;
+}
+
+#contactMe ul {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#contactMe li {
+  font-size: 16px;
+  margin: 1rem;
+  color: #111111;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+}
+
+#contactMe img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  padding-bottom: 1rem;
+}
+
+#contactMe i{
+  /* display: block;
+  width: 80px;
+  height: 80px;*/
+  padding-bottom: 1rem;
+  color: #fff;
+  font-size: 40px;
+  /* margin: auto; */
 }

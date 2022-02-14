@@ -28,8 +28,8 @@
         <ul>
           <li onclick="navToggle()"><a><i class="fa-solid fa-xmark"></i></a></li>
           <li onclick="navToggle()"><a href="#portfolio">Portfolio</a></li>
-          <li onclick="navToggle()"><a href="#">About Me</a></li>
-          <li onclick="navToggle()"><a href="#">Contact</a></li>
+          <li onclick="navToggle()"><a href="#aboutMe">About Me</a></li>
+          <li onclick="navToggle()"><a href="#contactMe">Contact</a></li>
         </ul>
       </div>
       <a href="javascript:void(0);" class="icon" onclick="navToggle()">
@@ -46,8 +46,8 @@
       <div id="link-container-desktop">
         <ul class="flex">
           <li><a class="link-desktop" href="#portfolio">Portfolio</a></li>
-          <li><a class="link-desktop" href="#">About Me</a></li>
-          <li><a class="link-desktop" href="#">Contact</a></li>
+          <li><a class="link-desktop" href="#aboutMe">About Me</a></li>
+          <li><a class="link-desktop" href="#contactMe">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -63,8 +63,8 @@
       <div id="intro-links">
         <ul>
           <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Get in touch</a></li>
+          <li><a href="#aboutMe">About Me</a></li>
+          <li><a href="#contactMe">Get in touch</a></li>
         </ul>
       </div>
     </section>
@@ -90,15 +90,37 @@
       </div>
     </section>
     <section id="aboutMe">
-      <div id="aboutMe-title-container">
-        <h3>About Me</h3>
-        <h2>Hi, I'm Xianglong</h2>
+      <div class="flex" id="aboutMe-container">
+        <div id="aboutMe1">
+          <h2>Hi, I'm Xianglong</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae praesentium saepe esse omnis autem eius! Excepturi repellendus tempora, aliquid aliquam, voluptatem qui, ducimus quas beatae tempore illo sint soluta at.</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quaerat quis non impedit, molestias, porro dolore, blanditiis veniam quos quas beatae nostrum animi tempora asperiores voluptas nulla esse placeat. Aut.</p>
+          <div><button class="fadein" href="#contactMe">Get in Touch</button></div>
+        </div>
+        <!-- <div class="image-container" id="aboutMe2">
+        </div> -->
       </div>
-      <div id="aboutMe-content-container">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae praesentium saepe esse omnis autem eius! Excepturi repellendus tempora, aliquid aliquam, voluptatem qui, ducimus quas beatae tempore illo sint soluta at.</p>
-        <button>Contact Me</button>
-        <div></div>
+      <div id="techStack">
+        <h2>Tech Stacks</h2>
+        <ul>
+          <li><img src="./images/html-5.svg">HTML5</li>
+          <li><img src="./images/css-3.svg">CSS3</li>
+          <li><img src="./images/javascript.svg">Javascript</li>
+          <li><img src="./images/java.svg">Java</li>
+          <li><img src="./images/mysql-icon.svg">MySQL</li>
+          <li><img src="./images/bootstrap.svg">Bootstrap</li>
+          <li><img src="./images/spring-icon.svg">Springboot</li>
+          <li><img src="./images/react.svg">React</li>
+        </ul>
       </div>
+    </section>
+    <section id="contactMe">
+      <h2>Get in Touch</h2>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/tanxianglong/"><img src="./images/LinkedIn-Icon-White-Logo.wine.svg"></a></li>
+        <li><a href="https://github.com/tan-xianglong"><img src="./images/GitHub-Icon-White-Logo.wine.svg"></a></li>
+        <li><a href="mailto:t.xianglong@gmail.com"><i class="fa-solid fa-at"></i></a></li>
+      </ul>
     </section>
   </main>
   <script src="./js/script.js"></script>
