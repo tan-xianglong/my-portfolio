@@ -298,12 +298,11 @@ section {
   width: 90%;
 }
 
-
-#card1 {
+.card1 {
   background-color: #38638d;
 }
 
-#card1 > a > h3 {
+.card1 > a > h3 {
   margin: 1rem auto;
   color: #fff;
   font-size: 16px;
@@ -311,12 +310,12 @@ section {
   letter-spacing: 0.05rem;
 }
 
-#card2 {
+.card2 {
   background-color: #ffcd3c;
 
 }
 
-#card2 > a > h3 {
+.card2 > a > h3 {
   margin: 1rem auto;
   font-size: 16px;
   font-weight: 300;
@@ -324,8 +323,33 @@ section {
   color: #111111
 }
 
+.card3 {
+  background-color: #38638d;
+}
+
+.card3 > a > h3 {
+  margin: 1rem auto;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+}
+
 .portfolio-desc {
   display: none;
+}
+
+.card4 {
+  background-color: #ffcd3c;
+
+}
+
+.card4 > a > h3 {
+  margin: 1rem auto;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+  color: #111111
 }
 
 @media only screen and (min-width: 500px) {
@@ -339,7 +363,7 @@ section {
     max-width: 1000px;
     margin: 0 auto;
     display: grid;
-    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
     gap: 1.5rem;
   }
 
@@ -370,11 +394,6 @@ section {
     transition: visibility 0.5s linear, opacity 0.5s linear;
   }
 
-  #card2 > a > h3 {
-    text-align: center;
-    color: #fff
-  }
-  
   .portfolio-card img {
     grid-area: 1 / 1 / 2 / 2;
     transition: visibility 0.5s linear, opacity 0.5s linear;
@@ -387,23 +406,23 @@ section {
     visibility: hidden;
     opacity: 0;
   }
-
-   .portfolio-card:hover h3 {
+  
+  .portfolio-card:hover h3 {
     visibility: visible;
     opacity: 1;
-  }
-  
-  #card1 {
-    grid-area: 1 / 1 / 2 / 2;
-    background-color: #38638d;
   }
   
   .portfolio-desc {
     display: block;
     border-radius: 10px;
   }
-
-  #desc1 {
+  
+  .card1 {
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: #38638d;
+  }
+  
+  .desc1 {
     grid-area: 1 / 2 / 2 / 5;
     background-color: #ffcd3c;
     color: #111111;
@@ -416,12 +435,22 @@ section {
     font-weight: 100;
     letter-spacing: 0.1rem;
   }
-
-  #desc1 > i {
+  
+  .desc1 > i {
     margin: 0 1rem;
   }
-
-  #desc2 {
+    
+  .card2 {
+    grid-area: 2 / 4 / 3 / 5;
+    background-color: #38638d;
+  }
+  
+  .card2 > a > h3 {
+    text-align: center;
+    color: #fff
+  }
+  
+  .desc2 {
     grid-area: 2 / 1 / 3 / 4;
     background-color: #ffcd3c;
     color: #111111;
@@ -435,13 +464,59 @@ section {
     letter-spacing: 0.1rem;
   }
 
-  #desc2 > i {
+  .desc2 > i {
     margin: 0 1rem;
   }
 
-  #card2 {
-    grid-area: 2 / 4 / 3 / 5;
+  .card3 {
+  grid-area: 3 / 1 / 4 / 2;
+  background-color: #38638d;
+  }
+
+  .desc3 {
+    grid-area: 3 / 2 / 4 / 5;
+    background-color: #ffcd3c;
+    color: #111111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    height: 100%;
+    font-size: 28px;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+  }
+
+  .desc3 > i {
+    margin: 0 1rem;
+  }
+
+  .card4 {
+    grid-area: 4 / 4 / 5 / 5;
     background-color: #38638d;
+  }
+  
+  .card4 > a > h3 {
+    text-align: center;
+    color: #fff
+  }
+
+  .desc4 {
+    grid-area: 4 / 1 / 5 / 4;
+    background-color: #ffcd3c;
+    color: #111111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    height: 100%;
+    font-size: 28px;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+  }
+
+  .desc4 > i {
+    margin: 0 1rem;
   }
 
 }
