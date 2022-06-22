@@ -1,154 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tan Xianglong Portfolio</title>
-  <link rel="stylesheet" href="./css/reset.css" />
-  <link rel="stylesheet" href="./css/styles.css" />
-  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Signika+Negative:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
-  <script src="https://kit.fontawesome.com/9dbc478fe2.js" crossorigin="anonymous"></script>
-  <meta property="og:url" content="https://tan-xianglong.github.io/my-portfolio/index.html">
-  <meta property="og:title" content="Xianglong's Portfolio">
-  <meta property="og:description" content="Check here for my latest portfolio">
-  <meta property="og:image" content="https://raw.githubusercontent.com/tan-xianglong/my-portfolio/4b9effb5c760f040cc38ba82c7217767e4aac358/images/Preview.png" />
-  <meta name="twitter:url" content="https://tan-xianglong.github.io/my-portfolio/index.html">
-  <meta name="twitter:title" content="Xianglong's Portfolio">
-  <meta name="twitter:description" content="Check here for my latest portfolio">
-  <meta name="twitter:image" content="https://raw.githubusercontent.com/tan-xianglong/my-portfolio/4b9effb5c760f040cc38ba82c7217767e4aac358/images/Preview.png">
-  <meta name="twitter:site" content="@18palms">
-  <meta name="twitter:creator" content="@18palms">
-</head>
-<body>
-  <header>
-    <!-- Top Navigation Menu -->
-    <nav class="navbar-mobile flex">
-      <div class="logo-container-mobile flex">
-        <div class="image-container">
-          <img class="nav-logo1" src="./images/hr-Color-logo-no-background.svg"/>
-          <img class="nav-logo2" src="./images/hr-Black-logo-no-background.svg"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tan Xianglong Portfolio</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Signika+Negative:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9dbc478fe2.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta
+      property="og:url"
+      content="https://tan-xianglong.github.io/my-portfolio/index.html"
+    />
+    <meta property="og:title" content="Xianglong's Portfolio" />
+    <meta
+      property="og:description"
+      content="Check here for my latest portfolio"
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/tan-xianglong/my-portfolio/4b9effb5c760f040cc38ba82c7217767e4aac358/images/Preview.png"
+    />
+    <meta
+      name="twitter:url"
+      content="https://tan-xianglong.github.io/my-portfolio/index.html"
+    />
+    <meta name="twitter:title" content="Xianglong's Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Check here for my latest portfolio"
+    />
+    <meta
+      name="twitter:image"
+      content="https://raw.githubusercontent.com/tan-xianglong/my-portfolio/4b9effb5c760f040cc38ba82c7217767e4aac358/images/Preview.png"
+    />
+    <meta name="twitter:site" content="@18palms" />
+    <meta name="twitter:creator" content="@18palms" />
+  </head>
+  <body>
+    <header>
+      <!-- Top Navigation Menu -->
+      <nav class="navbar-mobile flex">
+        <div class="logo-container-mobile flex">
+          <div class="image-container">
+            <img
+              class="nav-logo1"
+              src="./images/hr-Color-logo-no-background.svg"
+            />
+            <img
+              class="nav-logo2"
+              src="./images/hr-Black-logo-no-background.svg"
+            />
+          </div>
         </div>
-      </div>
-      <div id="link-container-mobile">
-        <ul>
-          <li onclick="navToggle()"><a><i class="fa-solid fa-xmark"></i></a></li>
-          <li onclick="navToggle()"><a href="#portfolio">Portfolio</a></li>
-          <li onclick="navToggle()"><a href="#aboutMe">About Me</a></li>
-          <li onclick="navToggle()"><a href="#contactMe">Contact</a></li>
-        </ul>
-      </div>
-      <a href="javascript:void(0);" class="icon" onclick="navToggle()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </nav>
-    <nav class="navbar-desktop flex">
-      <div class="logo-container-desktop flex">
-        <div class="image-container">
-          <img class="nav-logo1" src="./images/hr-Color-logo-no-background.svg" />
-          <img class="nav-logo2" src="./images/hr-Black-logo-no-background.svg"/>
+        <div id="link-container-mobile">
+          <ul>
+            <li onclick="navToggle()">
+              <a><i class="fa-solid fa-xmark"></i></a>
+            </li>
+            <li onclick="navToggle()"><a href="#portfolio">Portfolio</a></li>
+            <li onclick="navToggle()"><a href="#aboutMe">About Me</a></li>
+            <li onclick="navToggle()"><a href="#contactMe">Contact</a></li>
+          </ul>
         </div>
-      </div>
-      <div id="link-container-desktop">
-        <ul class="flex">
-          <li><a class="link-desktop" href="#portfolio">Portfolio</a></li>
-          <li><a class="link-desktop" href="#aboutMe">About Me</a></li>
-          <li><a class="link-desktop" href="#contactMe">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <section class="introduction">
-      <div id="intro-title">
-        <div class="image-container" id="intro-logo-container1"><h1><img src="./images/Color-logo-slogan-no-background.svg"/></h1></div>
-        <div class="image-container" id="intro-logo-container2"><h1><img src="./images/hr-Color-logo-slogan-no-background.svg"/></h1></div>
-        <div id="myName">
+        <a href="javascript:void(0);" class="icon" onclick="navToggle()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
+      <nav class="navbar-desktop flex">
+        <div class="logo-container-desktop flex">
+          <div class="image-container">
+            <img
+              class="nav-logo1"
+              src="./images/hr-Color-logo-no-background.svg"
+            />
+            <img
+              class="nav-logo2"
+              src="./images/hr-Black-logo-no-background.svg"
+            />
+          </div>
         </div>
-      </div>
-      <div id="intro-links">
-        <ul>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#aboutMe">About Me</a></li>
-          <li><a href="#contactMe">Get in touch</a></li>
-        </ul>
-      </div>
-    </section>
-    <section id="portfolio">
-      <div id="portfolio-title-container">
-        <h2>PORTFOLIO</h2>
-      </div>
-      <div class="" id="portfolio-container">
-        <div class="portfolio-card card1 fadein">
-          <a href="https://tan-xianglong.github.io/basics-blackjack/" target="_blank">
-            <img id="portfolio-img1" src="./images/portfolio-blackjack2.png" alt="blackjack screenshot" />
-            <h3 class="portfolio-name">BLACKJACK</h3>
-          </a>
+        <div id="link-container-desktop">
+          <ul class="flex">
+            <li><a class="link-desktop" href="#portfolio">Portfolio</a></li>
+            <li><a class="link-desktop" href="#aboutMe">About Me</a></li>
+            <li><a class="link-desktop" href="#contactMe">Contact</a></li>
+          </ul>
         </div>
-        <div class="portfolio-desc desc1 fadein" id="desc1"><i class="fa-solid fa-chevron-left"></i>JAVASCRIPT GAME</div>
-        <div class="portfolio-card card2 fadein" id="card2">
-          <a href="https://tan-xianglong.github.io/responsive-home-page/" target="_blank">
-            <img id="portfolio-img2" src="./images/portfolio-roboadvisor.png" alt="responsive home page screenshot" />
-            <h3 class="portfolio-name">COMPANY HOMEPAGE</h3>
-          </a>
+      </nav>
+    </header>
+    <main>
+      <section class="introduction">
+        <div id="intro-title">
+          <div class="image-container" id="intro-logo-container1">
+            <h1><img src="./images/Color-logo-slogan-no-background.svg" /></h1>
+          </div>
+          <div class="image-container" id="intro-logo-container2">
+            <h1>
+              <img src="./images/hr-Color-logo-slogan-no-background.svg" />
+            </h1>
+          </div>
+          <div id="myName"></div>
         </div>
-        <div class="portfolio-desc desc2 fadein" id="desc2">RESPONSIVE WEBSITE<i class="fa-solid fa-chevron-right"></i></div>
-        <div class="portfolio-card card3 fadein">
-          <a href="https://tan-xianglong.github.io/spotify_jammming/" target="_blank">
-            <img id="portfolio-img1" src="./images/spotifyjammming.png" alt="blackjack screenshot" />
-            <h3 class="portfolio-name">SPOTIFY JAMMMING</h3>
-          </a>
+        <div id="intro-links">
+          <ul>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#aboutMe">About Me</a></li>
+            <li><a href="#contactMe">Get in touch</a></li>
+          </ul>
         </div>
-        <div class="portfolio-desc desc3 fadein"><i class="fa-solid fa-chevron-left"></i>REACT SINGLE PAGE APP</div>
-        <div class="portfolio-card card4 fadein" id="card2">
-          <a href="https://github.com/tan-xianglong/football-data" target="_blank">
-            <img id="portfolio-img2" src="./images/footballdata.png" alt="responsive home page screenshot" />
-            <h3 class="portfolio-name">FOOTBALL DATABANK</h3>
-          </a>
+      </section>
+      <section id="portfolio">
+        <div id="portfolio-title-container">
+          <h2>PORTFOLIO</h2>
         </div>
-        <div class="portfolio-desc desc4 fadein" id="desc2">ASP.NET CORE MVC<i class="fa-solid fa-chevron-right"></i></div>
-      </div>
-    </section>
-    <section id="aboutMe">
-      <div class="flex" id="aboutMe-container">
-        <div id="aboutMe1">
-          <h2>Hi, I'm Xianglong</h2>
-          <p>I enjoy creating things. I like to see ideas develop and bring it to fruition. Nothing is too complex for me and I relish the challenge to translate complex ideas into working products.</p>
-          <p>When it comes to details, I strive for perfection because I know it matters to you. Open-mindedness and collaboration are key ingredients to a successful partnership. If you are looking for someone who can bring your ideas to life, I am here to take the journey with you.</p>
-          <div><a href="#contactMe"><button class="fadein">Get in Touch</button></a></div>
+        <div class="" id="portfolio-container">
+          <div class="portfolio-card card1 fadein">
+            <a
+              href="https://tan-xianglong.github.io/basics-blackjack/"
+              target="_blank"
+            >
+              <img
+                id="portfolio-img1"
+                src="./images/portfolio-blackjack2.png"
+                alt="blackjack screenshot"
+              />
+              <h3 class="portfolio-name">BLACKJACK</h3>
+            </a>
+          </div>
+          <div class="portfolio-desc desc1 fadein" id="desc1">
+            <i class="fa-solid fa-chevron-left"></i>JAVASCRIPT GAME
+          </div>
+          <div class="portfolio-card card2 fadein" id="card2">
+            <a
+              href="https://tan-xianglong.github.io/responsive-home-page/"
+              target="_blank"
+            >
+              <img
+                id="portfolio-img2"
+                src="./images/portfolio-roboadvisor.png"
+                alt="responsive home page screenshot"
+              />
+              <h3 class="portfolio-name">COMPANY HOMEPAGE</h3>
+            </a>
+          </div>
+          <div class="portfolio-desc desc2 fadein" id="desc2">
+            RESPONSIVE WEBSITE<i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div class="portfolio-card card3 fadein">
+            <a
+              href="https://tan-xianglong.github.io/spotify_jammming/"
+              target="_blank"
+            >
+              <img
+                id="portfolio-img1"
+                src="./images/spotifyjammming.png"
+                alt="blackjack screenshot"
+              />
+              <h3 class="portfolio-name">SPOTIFY JAMMMING</h3>
+            </a>
+          </div>
+          <div class="portfolio-desc desc3 fadein">
+            <i class="fa-solid fa-chevron-left"></i>REACT SINGLE PAGE APP
+          </div>
+          <div class="portfolio-card card4 fadein" id="card2">
+            <a
+              href="https://github.com/tan-xianglong/asp-net-blog"
+              target="_blank"
+            >
+              <img
+                id="portfolio-img2"
+                src="./images/portfolio-blog.png"
+                alt="asp.net core blog mvc and api"
+              />
+              <h3 class="portfolio-name">Blog</h3>
+            </a>
+          </div>
+          <div class="portfolio-desc desc4 fadein" id="desc2">
+            ASP.NET CORE MVC & API<i class="fa-solid fa-chevron-right"></i>
+          </div>
         </div>
-        <!-- <div class="image-container" id="aboutMe2">
+      </section>
+      <section id="aboutMe">
+        <div class="flex" id="aboutMe-container">
+          <div id="aboutMe1">
+            <h2>Hi, I'm Xianglong</h2>
+            <p>
+              I enjoy creating things. I like to see ideas develop and bring it
+              to fruition. Nothing is too complex for me and I relish the
+              challenge to translate complex ideas into working products.
+            </p>
+            <p>
+              When it comes to details, I strive for perfection because I know
+              it matters to you. Open-mindedness and collaboration are key
+              ingredients to a successful partnership. If you are looking for
+              someone who can bring your ideas to life, I am here to take the
+              journey with you.
+            </p>
+            <div>
+              <a href="#contactMe"
+                ><button class="fadein">Get in Touch</button></a
+              >
+            </div>
+          </div>
+          <!-- <div class="image-container" id="aboutMe2">
         </div> -->
-      </div>
-      <div id="techStack">
-        <h2>Tech Stacks</h2>
+        </div>
+        <div id="techStack">
+          <h2>Tech Stacks</h2>
+          <ul>
+            <li><img src="./images/html-5.svg" />HTML5</li>
+            <li><img src="./images/css-3.svg" />CSS3</li>
+            <li><img src="./images/javascript.svg" />Javascript</li>
+            <li><img src="./images/java.svg" />Java</li>
+            <li><img src="./images/c--4.svg" />C#</li>
+            <li><img src="./images/mysql-icon.svg" />MySQL</li>
+            <li><img src="./images/bootstrap.svg" />Bootstrap</li>
+            <li><img src="./images/spring-icon.svg" />Springboot</li>
+            <li><img src="./images/react.svg" />React</li>
+            <li><img src="./images/dot-net-core-7.svg" />.NET Core</li>
+          </ul>
+        </div>
+      </section>
+      <section id="contactMe">
+        <h2>Get in Touch</h2>
         <ul>
-          <li><img src="./images/html-5.svg">HTML5</li>
-          <li><img src="./images/css-3.svg">CSS3</li>
-          <li><img src="./images/javascript.svg">Javascript</li>
-          <li><img src="./images/java.svg">Java</li>
-          <li><img src="./images/c--4.svg">C#</li>
-          <li><img src="./images/mysql-icon.svg">MySQL</li>
-          <li><img src="./images/bootstrap.svg">Bootstrap</li>
-          <li><img src="./images/spring-icon.svg">Springboot</li>
-          <li><img src="./images/react.svg">React</li>
-          <li><img src="./images/dot-net-core-7.svg">.NET Core</li>
+          <li>
+            <a href="https://www.linkedin.com/in/tanxianglong/" target="_blank"
+              ><img src="./images/LinkedIn-Icon-White-Logo.wine.svg"
+            /></a>
+          </li>
+          <li>
+            <a href="https://github.com/tan-xianglong" target="_blank"
+              ><img src="./images/GitHub-Icon-White-Logo.wine.svg"
+            /></a>
+          </li>
+          <li>
+            <a href="mailto:t.xianglong@gmail.com"
+              ><i class="fa-solid fa-at"></i
+            ></a>
+          </li>
         </ul>
-      </div>
-    </section>
-    <section id="contactMe">
-      <h2>Get in Touch</h2>
-      <ul>
-        <li><a href="https://www.linkedin.com/in/tanxianglong/" target="_blank"><img src="./images/LinkedIn-Icon-White-Logo.wine.svg"></a></li>
-        <li><a href="https://github.com/tan-xianglong" target="_blank"><img src="./images/GitHub-Icon-White-Logo.wine.svg"></a></li>
-        <li><a href="mailto:t.xianglong@gmail.com"><i class="fa-solid fa-at"></i></a></li>
-      </ul>
-    </section>
-  </main>
-  <script src="./js/script.js"></script>
-</body>
+      </section>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
